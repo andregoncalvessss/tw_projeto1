@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Movies</title>
+  <link rel="stylesheet" href="css/pag_principal.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="shortcut icon" type="imagex/png" href="img/logo.jpg">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+        <!--logo-->
+        <img src="img/logo.jpg" alt="logo" class="logo">
+      <h1>Search Movies</h1>
+      <!-- Links da Navbar -->
+      <ul>
+        <li><a href="#" id="inicio">Início</a></li>
+        <li><a href="#" id="sobrenos">Sobre nós</a></li>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Filmes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Ação</a>
+              <a href="#">Terror</a>
+              <a href="#">Comedia</a>
+              <a href="#">Romance</a>
+            </div>
+            </div> 
+        <li><a href="#" id="listfavorito">Lista Favoritos</a></li>
+        <li><a href="#" id="contactos">Contatos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <img src="img/imprincipal.jpeg" alt="Filmes" class="movie-image">
+  <main>
+    <div class="container">
+      <!-- Imagem relacionada aos filmes -->
+     
+      
+      <!-- Introdução ao site de pesquisa de filmes -->
+      <section class="intro">
+        <h2>Bem-vindo ao Nosso Site de Filmes</h2>
+        <p>Encontre os filmes mais recentes, clássicos e populares aqui. Aqui puderá se informar sobre o que cada filme retrata e adiciona-los a uma lista de favoritos para puder ve-los ao longo do tempo.</p>
+        
+      </section>
+    </div>
+  </main>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- ver a barra -->
+       <h2 class="title-acao">Filmes de Ação</h2>
+          
+       
+              <div class="grid-container" id="gridContainer">
+                <!-- Placeholder para as imagens de filmes -->
+                <div class="grid-item">
+                  <img src="img/venom.jpeg" alt="Filme 1">
+                  <div class="box-text">
+                    <h2 class="movie-title">Venom</h2>
+                    <span class="movie-type">1h 52m | Ação/Ficção científica</span>
+                  </div>
+                </div>
+
+                <div class="grid-item">
+                  <img src="img/VF.jpeg" alt="Filme 2">
+                  <div class="box-text">
+                    <h2 class="movie-title">Velocidade Furiosa X </h2>
+                    <span class="movie-type">2h 21m | Ação/Crime</span>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="img/dune.jpeg" alt="Filme 3">
+                  <div class="box-text">
+                    <h2 class="movie-title">Dune</h2>
+                    <span class="movie-type">2h 35m | Ficção científica/Aventura </span>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="img/godzilla.jpg" alt="Filme 4">
+                  <div class="box-text">
+                    <h2 class="movie-title">Godzilla-Kong: o novo império</h2>
+                    <span class="movie-type">120min | Ação </span>
+                  </div>
+                </div>
+              </div>
+              <button id="loadMoreBtn">Mais filmes</button>
+            
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2 class="title">Filmes de Terror</h2>
+
+
+
+        <div class="grid-container" id="gridContainer">
+          <!-- Placeholder para as imagens de filmes -->
+          <div class="grid-item">
+            <img src="img/venom.jpeg" alt="Filme 1">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <img src="img/VF.jpeg" alt="Filme 2">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="img/dune.jpeg" alt="Filme 3">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="img/godzilla.jpg" alt="Filme 4">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+        </div>
+        <button id="loadMoreBtn">Carregar mais filmes</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2 class="title">Filmes de Comédia</h2>
+        
+
+
+        <div class="grid-container" id="gridContainer">
+          <!-- Placeholder para as imagens de filmes -->
+          <div class="grid-item">
+            <img src="img/venom.jpeg" alt="Filme 1">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <img src="img/VF.jpeg" alt="Filme 2">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="img/dune.jpeg" alt="Filme 3">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="img/godzilla.jpg" alt="Filme 4">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+        </div>
+        <button id="loadMoreBtn">Carregar mais filmes</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="title">Filmes de Romance</h2>
+
+
+
+        <div class="grid-container" id="gridContainer">
+          <!-- Placeholder para as imagens de filmes -->
+          <div class="grid-item">
+            <img src="img/venom.jpeg" alt="Filme 1">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <img src="img/VF.jpeg" alt="Filme 2">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="img/dune.jpeg" alt="Filme 3">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="img/godzilla.jpg" alt="Filme 4">
+            <div class="box-text">
+              <h2 class="movie-title">Venom</h2>
+              <span class="movie-type">120min | Ação</span>
+            </div>
+          </div>
+        </div>
+        <button id="loadMoreBtn">Carregar mais filmes</button>
+
+        
+
+  <script src="js/pag_principal.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+</body>
+</html>
