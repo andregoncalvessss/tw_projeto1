@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" type="imagex/png" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+                Search movies
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="sobrenos"> Sobre nos</a>
+                  </li>
+              
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Filmes</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#acao-section" data-bs-target="#acao-section">Ação</a></li>
+                      <li><a class="dropdown-item" href="#romance-section" data-bs-target="#romance-section">Romance</a></li>
+                      <li><a class="dropdown-item" href="#comedia-section" data-bs-target="#comedia-section">Comédia</a></li>
+                      <li><a class="dropdown-item" href="#terror-section" data-bs-target="#terror-section">Terror</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          
+        </div>
+      </nav>
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Venom-01.jpg" alt="Venom" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Venom</h3>
+        <p>Ação/ Ficção científica</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/topgun1.png" alt="Top Gun: Maverick" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Top Gun: Maverick</h3>
+        <p>Ação/ Drama</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="img/dune2.jpg" alt="Duna: Parte dois" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Duna: Parte Dois</h3>
+        <p>Ação/ Ficção Científica </p>
+      </div>  
+    </div>
+  </div>
+
+ 
+  <br>
+  <br>
+  <div id="acao-section">
+    <div class="container">
+  <h2>Filmes de Ação</h2>
+
+  <br>
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container">
+<div class="row" id="filmes">
+  
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/vermelho.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Céu Vermelho Sangue</h4>
+
+        <p class="card-text">2021 | 2h10m | Ação</p>
+        <button id="ver-mais"class="btn btn-primary">Ver Mais</button>
+
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+            </div>
+        </div>
+
+        
+      </div>
+    </div>
+    
+  </div>
+
+
+  
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/x.webp" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Velocidade Furiosa X</h4>
+
+        <p class="card-text">2023 | 2h21m | Ação/Crime 
+        </p>
+        <button id="ver-mais2" class="btn btn-primary">Ver Mais</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <h2 id="titulo"></h2>
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                <img id="imagem" alt="Capa do filme" />
+            </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div> <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/road.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Road House</h4>
+
+        <p class="card-text">2024 | 2h10m | Ação/Thriller</p>
+        
+        <button id="ver-mais3" class="btn btn-primary" >Ver mais</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <h2 id="titulo"></h2>
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                <img id="imagem" alt="Capa do filme" />
+            </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div> <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/dune.jpeg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">Dune: Parte Dois</h4>
+
+        <p class="card-text">2024 | 2h46m | Ação</p>
+        <button id="ver-mais4" class="btn btn-primary" >Ver mais</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close">&times;</span>
+                <h2 id="titulo"></h2>
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                <img id="imagem" alt="Capa do filme" />
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<br>
+
+<button id="loadMoreBtn" class="botao">Ver Mais</button>
+<div id="moreMovies"></div>
+
+
+
+<br>
+<br>
+<div id="romance-section">
+  <div class="container">
+<h2>Filmes de Romance</h2>
+
+<br>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+<div class="container">
+<div class="row" id="filmes">
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/viverdepoisdeti.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Viver Depois de Ti</h4>
+
+        <p class="card-text">2016 | 1h50m | Romance/Drama</p>
+        <button id="ver-mais11" class="btn btn-primary" >Ver mais</button>
+    
+           
+    
+            <!-- Modal Box -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="fechar" class="fechar">&times;</span>
+                    <h2 id="titulo"></h2>
+                    <img id="imagem" alt="Imagem do Filme" />
+                    <p id="tipo"></p>
+                    <p id="duracao"></p>
+                    <p id="descricao"></p>
+                    
+                </div>
+            </div>
+
+
+
+
+      </div>
+    </div>
+    
+  </div>
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/5passos.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">A Distância Entre Nós</h4>
+
+        <p class="card-text">2019 | 1h57m | Romance</p>
+        <button id="ver-mais12" class="btn btn-primary">Ver Mais</button>
+    
+            <!-- Modal Box -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="fechar" class="fechar">&times;</span>
+                    <h2 id="titulo"></h2>
+                    <img id="imagem" alt="Imagem do Filme" />
+                    <p id="tipo"></p>
+                    <p id="duracao"></p>
+                    <p id="descricao"></p>
+                    
+                </div>
+            </div>
+
+
+      </div>
+    </div>
+    
+  </div> <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/1ano.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">A vida num Ano</h4>
+
+        <p class="card-text">2020 | 1h54m | Romance/Drama</p>
+       
+        <button id="ver-mais13" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/adaline.jpeg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">A idade de Adaline</h4>
+
+        <p class="card-text">2015 | 1h52m | Romance/Fantasia</p>
+        <button id="ver-mais14" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+    
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<button id="loadMoreBtn1" class="botao">Ver Mais</button>
+<div id="moreMovies1"></div>
+
+
+
+<br>
+<br>
+
+<div id="comedia-section">
+  <div class="container">
+<h2>Filmes de Comédia</h2>
+
+<br>
+
+
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+<div class="container">
+<div class="row" id="filmes">
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/ela.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">A Mentira</h4>
+
+        <p class="card-text">2010 | 1h32m | Comédia</p>
+        
+        <button id="ver-mais21" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/naboa.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Tudo na Boa!</h4>
+
+        <p class="card-text">2019 | 1h57m | Comédia</p>
+        <button id="ver-mais22" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+  
+  
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/menosvoce.jpeg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Todos menos Tu</h4>
+
+        <p class="card-text">2023 | 1h44m | Comédia</p>
+        <button id="ver-mais23" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/30.jpeg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">De Repente 30</h4>
+
+        <p class="card-text">2004 | 1h38m | Comédia</p>
+        <button id="ver-mais24" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+    
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<button id="loadMoreBtn2" class="botao">Ver Mais</button>
+<div id="moreMovies2"></div>
+
+
+
+<br>
+<br>
+
+<div id="terror-section">
+  <div class="container">
+<h2>Filmes de Terror</h2>
+
+<br>
+
+
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+<div class="container">
+<div class="row" id="filmes">
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/gritos.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Pânico 6</h4>
+
+        <p class="card-text">2023 | 2h2m | Terror/Crime </p>
+        <button id="ver-mais31" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/birdbox.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Às Cegas </h4>
+
+        <p class="card-text">2018 | 2h4m | Terror/Ficção científica </p>
+        <button id="ver-mais32" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/ruamedo.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Rua do Medo - Parte 1: 1994</h4>
+
+        <p class="card-text">2021 | 1h47m | Terror/Mistério
+          
+          </p>
+          <button id="ver-mais33" class="btn btn-primary">Ver Mais</button>
+    
+          <!-- Modal Box -->
+          <div id="modal" class="modal">
+              <div class="modal-content">
+                  <span id="fechar" class="fechar">&times;</span>
+                  <h2 id="titulo"></h2>
+                  <img id="imagem" alt="Imagem do Filme" />
+                  <p id="tipo"></p>
+                  <p id="duracao"></p>
+                  <p id="descricao"></p>
+                  
+              </div>
+          </div>
+      </div>
+    </div>
+    
+  </div> <div class="col-md-3">
+    <div class="card" width="100%">
+      <img class="card-img-top" src="img/baby.jpg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">The Babysitter: Rainha da Morte</h4>
+
+        <p class="card-text">2020 | 1h41m | Terror/Comédia
+        </p>
+        <button id="ver-mais34" class="btn btn-primary">Ver Mais</button>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2 id="titulo"></h2>
+                <img id="imagem" alt="Imagem do Filme" />
+                <p id="tipo"></p>
+                <p id="duracao"></p>
+                <p id="descricao"></p>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+    
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+<button id="loadMoreBtn3" class="botao">Ver Mais</button>
+<div id="moreMovies3"></div>
+
+
+<script src="js/index.js"></script>
+<script src="json/index.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
